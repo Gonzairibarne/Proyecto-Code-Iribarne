@@ -1,0 +1,237 @@
+body{
+
+    margin: 0;
+    border: 1;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.384);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*-----HEADER-----*/
+
+header{
+   background-color: rgb(109, 74, 28);
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1rem;
+}
+.header__div__logo{
+    width: 250px;
+    height: 200px;
+
+}
+.header__div__2{
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+}
+
+.header__nav__ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+
+    
+
+    /*gap: 16px;*/
+
+}
+
+.div__h1{
+    background-color: grey;
+}
+
+.nav__ul__li{
+    
+}
+
+.Nav__ul__li__a{
+   color: white;
+   text-decoration: none;
+   border-radius: 20px;
+   background-color: grey;
+
+}
+/*-----HEADER-----*/
+
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+.main__1{
+    border: 1;
+    border-style: solid;
+    border-color: black;
+    background-color:white;
+}
+.main__2{
+    border: 1;
+    border-style: solid;
+    border-color: black;
+    background-color:  rgb(241, 237, 179)
+}
+
+h1{
+    text-align: center;
+    border: 1;
+    border-style: solid;
+ 
+}
+
+
+.nav__ul{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 16px;
+    background-color:cornsilk
+}
+
+.div__img{
+    border-radius: 30px;
+}
+
+.footer{
+    border: 1;
+    border-style: solid;
+    border-color: black;
+    background-color:white;
+}
+ 
+/* tarjeta */
+
+
+.tarjeta{
+    background-color: rgb(235, 180, 109);
+    color: white;
+    width: 300px;
+    height: 400px;
+    
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 20px 40px 20px;
+    position: relative;
+    
+}
+
+/*.tarjeta:hover{
+    cursor: pointer;
+    background-color: rgb(230, 225, 189);
+
+}*/
+
+
+
+.tarjeta__titulo{
+    color: black;
+    margin-bottom: 2rem;
+}
+
+
+.tarjeta__parrafo{
+    color: rgb(0, 0, 0);
+    
+}
+.tarjeta__imagen{
+    width: 75%;
+    height: 170px;
+    object-fit: cover ;
+    border-radius: 16px;
+
+}
+.tarjeta__contactame{
+background-color: rgb(87, 67, 2);
+color: rgb(0, 0, 0);
+padding: 0.5rem 1rem;
+border-radius: 5px;
+
+position: absolute;
+right: 0px;
+top: 0px;
+}
+
+.tarjeta__contactame:hover{
+    cursor: pointer;
+    background-color: rgb(172, 134, 13);
+
+}
+
+ /*boton wsp*/
+.whatsapp{
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 60px;
+    display: inline-block;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+}
+
+/* Articulos */
+.articulos__main{
+    width: 95%;
+    margin-top: 15px;
+    
+
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: auto;
+    grid-template-columns:auto auto ;
+
+    grid-template-areas:
+        "izquierda derecha"
+        "centro centro";
+        
+}
+
+
+
+.caja__imagen__a{
+ grid-area: izquierda;
+ text-align: center;
+}
+
+.caja__imagen__b{
+ grid-area: derecha;
+ text-align: center;
+
+ 
+}
+
+.caja__imagen__c{
+ grid-area: centro  ;
+ text-align: center;
+
+ display: flex;
+ flex-direction: row;
+ align-items: center;    
+ 
+
+}
+.caja__imagen__c__parrafo{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin: 1rem;
+
+}
+
+
+
+ .imagen__b{
+   width: 480px;
+   height: 620px;
+
+ }
+
+
+
+
