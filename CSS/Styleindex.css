@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
 
     margin: 0;
@@ -176,6 +182,8 @@ top: 0px;
 }
 
 /* Articulos */
+
+
 .articulos__main{
     width: 95%;
     margin-top: 15px;
@@ -188,11 +196,8 @@ top: 0px;
 
     grid-template-areas:
         "izquierda derecha"
-        "centro centro";
-        
+        "centro centro"; 
 }
-
-
 
 .caja__imagen__a{
  grid-area: izquierda;
@@ -213,23 +218,18 @@ top: 0px;
  display: flex;
  flex-direction: row;
  align-items: center;    
- 
-
 }
+
 .caja__imagen__c__parrafo{
     display: flex;
     flex-direction: column;
     text-align: start;
     margin: 1rem;
-
 }
-
-
 
  .imagen__b{
    width: 480px;
    height: 620px;
-
  }
 
 
