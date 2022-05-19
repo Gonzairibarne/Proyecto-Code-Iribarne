@@ -1,0 +1,44 @@
+/* Footer */
+
+/* padre */
+
+.Footer__div{
+    display: grid;
+     background-color: rgb(109, 74, 28);
+
+    grid-template-columns: auto auto auto;
+    
+    grid-template-rows: auto;
+  
+
+    grid-template-areas:
+        "ele1 ele1 ."
+        ". ele2 ."
+        ". . ele3";
+        
+}
+
+
+/* hijos */
+
+.footer__derechos{
+    grid-area: ele1;
+}
+.footer__redes{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    grid-area: ele3;
+}
+.footer__instagram{
+   
+    border: solid 3px violet;
+    
+}
+
+.footer__facebook{
+  
+    background-color: rgb(106, 166, 223);
+    border: solid 3px  rgb(106, 166, 223);
+   
+}
