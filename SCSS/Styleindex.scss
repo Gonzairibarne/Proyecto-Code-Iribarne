@@ -1,3 +1,8 @@
+// este es mi acrivo principal de SASS
+// importando todos los parciales de mis estilos
+// aclaracion es importante el orden de importacion
+
+
 @import "/SCSS/Parciales/_parcial1.scss";
 @import "/SCSS/Parciales/_header.scss";
 @import "/SCSS/Parciales/_inicio.scss";
@@ -6,7 +11,7 @@
 @import "/SCSS/Parciales/_tarjeta.scss";
 @import "/SCSS/Parciales/_botonwsp.scss";
 @import "/SCSS/Parciales/_articulos.scss";
-
+@import "/SCSS/Parciales/_formulariodecontactanos.scss";
 
 
 
