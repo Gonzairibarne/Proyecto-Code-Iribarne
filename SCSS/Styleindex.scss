@@ -3,19 +3,43 @@
 // aclaracion es importante el orden de importacion
 
 
-@import "/SCSS/Parciales/parcial1";
-@import "/SCSS/Parciales/header";
-@import "/SCSS/Parciales/inicio";
-@import "/SCSS/Parciales/footer";
-@import "/SCSS/Parciales/formularioindex";
-@import "/SCSS/Parciales/tarjeta";
-@import "/SCSS/Parciales/botonwsp";
-@import "/SCSS/Parciales/articulos";
-@import "/SCSS/Parciales/formulariodecontactanos";
+@import "../SCSS/Parciales/_body.scss";
+@import "../SCSS/Parciales/_header.scss";
+@import "../SCSS/Parciales/_inicio.scss";
+@import "../SCSS/Parciales/_footer.scss";
+@import "../SCSS/Parciales/_formularioIndex.scss";
+@import "../SCSS/Parciales/_botonWSP.scss";
+@import "../SCSS/Parciales/_tarjetas.scss";
+@import "../SCSS/Parciales/_articulos.scss";
+@import "../SCSS/Parciales/_formularioContactanos.scss";
+@import "../SCSS/Parciales/_MediaQueries.scss";
 
-
-
-
+  
+  
+  
+ 
+  
+  
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  
+  
+  
+  /*# sourceMappingURL=Styleindex.css.map */
 
 
 
