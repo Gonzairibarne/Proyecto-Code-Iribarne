@@ -9,25 +9,25 @@
     grid-template-areas: "ele1 ele1 ."
    ". ele2 ."
    ". . ele3";
-  }
-  
-  /* hijos */
-  .footer__derechos {
+     /* hijos */
+  &__derechos {
     grid-area: ele1;
   }
   
-  .footer__redes {
+  &__redes {
     display: flex;
     justify-content: space-between;
     padding: 1rem;
     grid-area: ele3;
   }
   
-  .footer__instagram {
-    border: solid 3px violet;
+  &__instagram {
+    border: solid 3px viole&
   }
   
-  .footer__facebook {
+  &__facebook {
     background-color: #6aa6df;
     border: solid 3px #6aa6df;
+  }
+  
   }
