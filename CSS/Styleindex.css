@@ -101,7 +101,8 @@ h1 {
   background-color: blanchedalmond;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
-  grid-template-areas: "img1 . ." ". . img2";
+  grid-template-areas: "img1 . ."
+ ". . img2";
 }
 
 .main__imagen1 {
@@ -131,7 +132,9 @@ h1 {
   background-color: #6d4a1c;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto;
-  grid-template-areas: "ele1 ele1 ." ". ele2 ." ". . ele3";
+  grid-template-areas: "ele1 ele1 ."
+ ". ele2 ."
+ ". . ele3";
 }
 
 /* hijos */
@@ -242,7 +245,8 @@ h1 {
   grid-gap: 15px;
   grid-template-columns: auto;
   grid-template-columns: auto auto;
-  grid-template-areas: "izquierda derecha" "centro centro";
+  grid-template-areas: "izquierda derecha"
+ "centro centro";
 }
 
 .h2__titulo {
@@ -343,7 +347,8 @@ h1 {
     grid-column: 1 / span 3;
   }
   .main__data {
-    grid-template-areas: "img1 . ." "img2 . .";
+    grid-template-areas: "img1 . ."
+ "img2 . .";
   }
   /* articulos */
   .articulos__main {
@@ -368,7 +373,9 @@ h1 {
   .articulos__main {
     display: grid;
     grid-template-columns: auto;
-    grid-template-areas: "caja1" "caja2" "caja3";
+    grid-template-areas: "caja1"
+ "caja2"
+ "caja3";
   }
   .caja__imagen__c {
     grid-area: caja3;
@@ -380,14 +387,16 @@ h1 {
     width: 100%;
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-areas: "imagen texto" "imagen texto";
+    grid-template-areas: "imagen texto"
+ "imagen texto";
   }
   .caja__imagen__b {
     grid-area: caja2;
     width: 100%;
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-areas: "imagen texto" "imagen texto";
+    grid-template-areas: "imagen texto"
+ "imagen texto";
   }
   .imagen__a, .imagen__b, .imagen__c {
     width: 300px;
@@ -413,7 +422,9 @@ h1 {
   .articulos__main {
     display: grid;
     grid-template-columns: auto;
-    grid-template-areas: "caja1" "caja2" "caja3";
+    grid-template-areas: "caja1"
+ "caja2"
+ "caja3";
   }
   .caja__imagen__c {
     grid-area: caja3;
