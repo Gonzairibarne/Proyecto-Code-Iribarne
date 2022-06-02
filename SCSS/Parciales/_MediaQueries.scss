@@ -19,18 +19,18 @@
   @media screen and (max-width: 600px) {
     /* index */
     
-    .navbar{
-      display: block;
+     .navbar{
+     display: block;
       
     }
   
     .div__h1{
       display: none;
     }
-    .nav{
+     .nav{
       display: none;
       
-    }
+   } 
     .menu__hamburguesa{
       display: grid;
     
@@ -56,7 +56,8 @@
     display: grid;
   
   }
-  }
+}
+
   
   @media screen and ( max-width: 768px){
     .main__imagen1 img{
@@ -156,8 +157,7 @@
   
         }
     .imagen__a, .imagen__b, .imagen__c{
-      width: 300px;
-      height: auto;
+      @include sizes(auto, 300px);
     }
   }
   

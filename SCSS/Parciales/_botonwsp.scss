@@ -1,7 +1,6 @@
 /*boton wsp*/
 .whatsapp {
-    background-color: green;
-    color: white;
+    
     text-decoration: none;
     padding: 0.5rem 1rem;
     border-radius: 60px;
@@ -9,4 +8,10 @@
     position: fixed;
     bottom: 2rem;
     right: 2rem;
+  }
+
+  .whatsapp--color{
+    @extend .whatsapp;
+    background-color: green;
+    color: white;
   }
