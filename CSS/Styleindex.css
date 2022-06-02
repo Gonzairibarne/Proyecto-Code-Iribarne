@@ -24,18 +24,18 @@ header {
   padding: 1rem;
 }
 
-.header__div__logo {
+header__div__logo {
   width: 250px;
   height: 200px;
 }
 
-.header__div__2 {
+header__div__2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.header__nav__ul {
+header__nav__ul {
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -52,7 +52,7 @@ header {
   padding: 4px;
 }
 
-.Nav__ul__li__a {
+.nav__ul__li__a {
   color: white;
   text-decoration: none;
   border-radius: 20px;
@@ -75,7 +75,7 @@ main {
   border: 1px;
   border-style: solid;
   border-color: black;
-  background-color: #f1edb3;
+  background-color: blanchedalmond;
 }
 
 h1 {
@@ -88,7 +88,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   border-radius: 16px;
-  background-color: cornsilk;
+  background-color: blanchedalmond;
 }
 
 .div__img {
@@ -101,8 +101,7 @@ h1 {
   background-color: blanchedalmond;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
-  grid-template-areas: "img1 . ."
- ". . img2";
+  grid-template-areas: "img1 . ." ". . img2";
 }
 
 .main__imagen1 {
@@ -127,35 +126,40 @@ h1 {
 
 /* Footer */
 /* padre */
-.Footer__div {
+.footer__div {
   display: grid;
   background-color: #6d4a1c;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto;
-  grid-template-areas: "ele1 ele1 ."
- ". ele2 ."
- ". . ele3";
+  grid-template-areas: "ele1 ele1 ." ". ele2 ." ". . ele3";
+  /* hijos */
 }
 
-/* hijos */
-.footer__derechos {
+.footer__div__derechos {
   grid-area: ele1;
 }
 
-.footer__redes {
+.footer__div__redes {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
   grid-area: ele3;
 }
 
-.footer__instagram {
-  border: solid 3px violet;
+/*$mapa: (
+    clave1: valor;
+    clave2: valor;
+    clave3: valor;
+
+); */
+.footer__redes__a-instagram {
+  background-color: violet;
+  border: solid;
 }
 
-.footer__facebook {
+.footer__redes__a-facebook {
   background-color: #6aa6df;
-  border: solid 3px #6aa6df;
+  border: solid;
 }
 
 /* formulario index */
@@ -173,9 +177,7 @@ h1 {
 }
 
 /*boton wsp*/
-.whatsapp {
-  background-color: green;
-  color: white;
+.whatsapp, .whatsapp--color {
   text-decoration: none;
   padding: 0.5rem 1rem;
   border-radius: 60px;
@@ -183,6 +185,11 @@ h1 {
   position: fixed;
   bottom: 2rem;
   right: 2rem;
+}
+
+.whatsapp--color {
+  background-color: green;
+  color: white;
 }
 
 /* tarjeta */
@@ -239,14 +246,13 @@ h1 {
 /* Articulos */
 .articulos__main {
   width: 95%;
-  background-color: antiquewhite;
+  background-color: blanchedalmond;
   margin-top: 15px;
   display: grid;
   grid-gap: 15px;
   grid-template-columns: auto;
   grid-template-columns: auto auto;
-  grid-template-areas: "izquierda derecha"
- "centro centro";
+  grid-template-areas: "izquierda derecha" "centro centro";
 }
 
 .h2__titulo {
@@ -319,6 +325,20 @@ h1 {
   display: none;
 }
 
+/*$mapa: (
+    clave1: valor;
+    clave2: valor;
+    clave3: valor;
+
+); */
+.footer__redes {
+  background-color: violet;
+}
+
+.footer__redes {
+  background-color: #6aa6df;
+}
+
 /* medias queries */
 @media screen and (max-width: 1024px) {
   /* index */
@@ -347,8 +367,7 @@ h1 {
     grid-column: 1 / span 3;
   }
   .main__data {
-    grid-template-areas: "img1 . ."
- "img2 . .";
+    grid-template-areas: "img1 . ." "img2 . .";
   }
   /* articulos */
   .articulos__main {
@@ -373,9 +392,7 @@ h1 {
   .articulos__main {
     display: grid;
     grid-template-columns: auto;
-    grid-template-areas: "caja1"
- "caja2"
- "caja3";
+    grid-template-areas: "caja1" "caja2" "caja3";
   }
   .caja__imagen__c {
     grid-area: caja3;
@@ -387,16 +404,14 @@ h1 {
     width: 100%;
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-areas: "imagen texto"
- "imagen texto";
+    grid-template-areas: "imagen texto" "imagen texto";
   }
   .caja__imagen__b {
     grid-area: caja2;
     width: 100%;
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-areas: "imagen texto"
- "imagen texto";
+    grid-template-areas: "imagen texto" "imagen texto";
   }
   .imagen__a, .imagen__b, .imagen__c {
     width: 300px;
@@ -422,9 +437,7 @@ h1 {
   .articulos__main {
     display: grid;
     grid-template-columns: auto;
-    grid-template-areas: "caja1"
- "caja2"
- "caja3";
+    grid-template-areas: "caja1" "caja2" "caja3";
   }
   .caja__imagen__c {
     grid-area: caja3;

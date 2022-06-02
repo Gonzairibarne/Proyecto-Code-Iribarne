@@ -21,13 +21,31 @@
     grid-area: ele3;
   }
   
-  &__instagram {
-    border: solid 3px viole&
-  }
   
-  &__facebook {
-    background-color: #6aa6df;
-    border: solid 3px #6aa6df;
-  }
   
   }
+  // maps
+
+/*$mapa: (
+    clave1: valor;
+    clave2: valor;
+    clave3: valor;
+
+); */
+
+$redes: (
+
+  instagram: violet,
+  facebook: #6aa6df  
+
+
+);
+
+@each $clave,$valor in $redes {
+    .footer__redes__a-#{$clave}{
+        background-color: $valor;
+        border: solid;
+    }
+    
+}
+   

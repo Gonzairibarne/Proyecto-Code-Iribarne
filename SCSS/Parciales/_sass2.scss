@@ -1,0 +1,51 @@
+// maps
+
+/*$mapa: (
+    clave1: valor;
+    clave2: valor;
+    clave3: valor;
+
+); */
+
+// declaracion map
+$headings: (
+
+    h1:4em,
+    h2:3em,
+    h3:2em,
+    h4:1em
+);
+
+$h1: map-get($headings , $h1 );
+
+
+// declarion mixin
+
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+
+
+}
+
+@mixin generarflex($direccion,$eje-principal,$eje-secundario) {
+    display: flex;
+    flex-direction: $direccion;
+    justify-content: $eje-principal;
+    align-items: $eje-secundario;
+    
+}
+
+@mixin generargrid( $direccion, $eje-principal, $eje-secundario) {
+    display: grid;
+    flex-direction: $direccion;
+    justify-content: $eje-principal;
+    align-items: $eje-secundario;
+    
+}
+
+
+
+
+
+

@@ -8,8 +8,8 @@ header {
     padding: 1rem;
 
     &__div__logo {
-      width: 250px;
-      height: 200px;
+      @include sizes(200px, 250px)
+     
     }
     
     &__div__2 {
@@ -66,9 +66,12 @@ header {
   }
   
   h1 {
+    
     text-align: center;
     border: 1px;
     border-style: solid;
+    font-size: $h1;
+
   }
   
   .nav__ul {

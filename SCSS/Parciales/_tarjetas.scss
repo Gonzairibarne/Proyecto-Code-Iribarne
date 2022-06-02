@@ -30,8 +30,7 @@
   }
   
   .tarjeta__imagen {
-    width: 75%;
-    height: 170px;
+    @include sizes(170px, 75%);
     object-fit: cover;
     border-radius: 16px;
   }
